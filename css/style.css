@@ -55,9 +55,14 @@ ul {
     margin: 0 -1rem;
 }
 
-.col {
-    width: 100%;
+[class^="col"] {
     padding: 0 1rem;
+}
+
+.col {
+    width: auto;
+    flex-basis: auto;
+    flex-grow: 1;
 }
 
 .col-1 {
@@ -155,11 +160,6 @@ main {
 
 /* Tablet */
 @media screen and (min-width: 768px) {
-    h1 {
-        text-align: left;
-        margin-left: 1rem;
-    }
-
     .container {
         max-width: 100%;
 
@@ -184,16 +184,145 @@ main {
             }
         }
     }
+
+    h1 {
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    /* #region responsive utils */
+    .col-md-1 {
+        width: calc(100% / 12 * 1);
+    }
+
+    .col-md-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .col-md-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+    .col-md-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-md-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-md-9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .col-md-10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col-md-11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+    /* #endregion responsive utils */
 }
 
 /* Desktop */
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         width: 80%;
+        max-width: 900px;
+
+        .card .details {
+            font-size: 0.9rem;
+
+            h3 {
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                padding-bottom: 2.65rem;
+
+                li {
+                    margin: 0.5rem 0;
+                }
+            }
+        }
     }
 
-    .col {
-        width: calc(100% / 2);
+    [class^="col"] {
+        padding: 0;
+    }
+    
+    .col-lg-8 {
+        padding-left: 1rem;    
+    }
+    
+    .col-lg-4 {
+        padding-right: 1rem;
     }
 
-} */
+     /* #region responsive utils */
+    .col-lg-1 {
+        width: calc(100% / 12 * 1);
+    }
+
+    .col-lg-2 {
+        width: calc(100% / 12 * 2);
+    }
+
+    .col-lg-3 {
+        width: calc(100% / 12 * 3);
+    }
+
+    .col-lg-4 {
+        width: calc(100% / 12 * 4);
+    }
+
+    .col-lg-5 {
+        width: calc(100% / 12 * 5);
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: calc(100% / 12 * 7);
+    }
+
+    .col-lg-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-lg-9 {
+        width: calc(100% / 12 * 9);
+    }
+
+    .col-lg-10 {
+        width: calc(100% / 12 * 10);
+    }
+
+    .col-lg-11 {
+        width: calc(100% / 12 * 11);
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+    /* #endregion responsive utils */
+}
