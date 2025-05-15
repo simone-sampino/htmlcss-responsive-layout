@@ -200,6 +200,11 @@ main {
         /* #endregion color socials */
     }
 
+    /* Hidden Banner */
+    .banner {
+        display: none;
+    }
+
     /* Presentation */
     .presentation {
 
@@ -243,7 +248,7 @@ main {
             }
         }
 
-        .card .details {
+        .row .card .details {
             font-size: 1rem;
 
             ul {
@@ -256,10 +261,43 @@ main {
             }
         }
     }
-
+    
     h1 {
         text-align: left;
         margin-left: 1rem;
+    }
+        
+    main {
+
+        .social {
+            
+            i {
+                font-size: 1rem;
+                padding: 10px;
+                width: 115px;
+                border-radius: 25%;
+            }
+        }
+        
+        .banner {
+            display: block;
+            margin-bottom: 2rem;
+        }
+        
+        .presentation {
+    
+            img {
+                float: left;
+                margin: 0;
+                width: 45%;
+                margin: 0.5rem 1rem 0 0;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
     }
     
     /* #region responsive utils */
