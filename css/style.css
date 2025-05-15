@@ -177,7 +177,15 @@ main {
             box-shadow: 1px 1px 10px 3px #80808030;
         }
         
-        /* #region color socials */
+        /* #region socials */
+        .name {
+            display: none;
+            color: var(--dark);
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
         .fa-facebook {
             color: #1A77F3;
         }
@@ -197,7 +205,7 @@ main {
         .fa-youtube {
             color: #E62222;
         }
-        /* #endregion color socials */
+        /* #endregion socials */
     }
 
     /* Hidden Banner */
@@ -360,7 +368,7 @@ main {
             width: 80%;
             max-width: 900px;
     
-            .card .details {
+            .row .card .details {
                 font-size: 0.9rem;
     
                 h3 {
@@ -373,6 +381,17 @@ main {
                     li {
                         margin: 0.5rem 0;
                     }
+                }
+            }
+        }
+
+        .social {
+
+            i {
+                width: 140px;
+
+                .name {
+                    display: inline;
                 }
             }
         }
